@@ -1,5 +1,5 @@
-project('sd-tools', 'c',
-        version : '0.99.1',
+project('kedilinux-tmpfiles', 'c',
+        version : '0.99.2',
         license : 'LGPLv2+',
         default_options: [
                 'c_std=gnu11',

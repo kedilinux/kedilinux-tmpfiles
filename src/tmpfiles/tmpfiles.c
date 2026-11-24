@@ -5479,6 +5479,7 @@ DEFINE_PRIVATE_HASH_OPS_WITH_VALUE_DESTRUCTOR(item_array_hash_ops, char, string_
                                               ItemArray, item_array_free);
 
 static int run(int argc, char **argv) {
+        char **system_conf_dirs = CONF_PATHS_STRV("tmpfiles.d");
         _cleanup_strv_free_ char **config_dirsp = NULL;
         _cleanup_(context_done) Context c = {};
         char **config_dirs = NULL;
@@ -5550,7 +5551,7 @@ static int run(int argc, char **argv) {
                 break;
 
         case RUNTIME_SCOPE_SYSTEM:
-                config_dirs = CONF_PATHS_STRV("tmpfiles.d");
+                config_dirs = system_conf_dirs;
                 break;
 
         default:

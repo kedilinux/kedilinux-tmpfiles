@@ -1,4 +1,4 @@
-# sd-tools
+# kedilinux-tmpfiles, from chimera-linux/sd-tools
 
 This is a collection of tools forked from systemd. Currently the following
 are provided:

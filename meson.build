@@ -50,7 +50,6 @@ config_h = configure_file(
 includes = include_directories('src/shared', '.')
 
 subdir('src/shared')
-subdir('src/sysusers')
 subdir('src/tmpfiles')
 
 if get_option('tests')

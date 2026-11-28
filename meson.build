@@ -1,4 +1,4 @@
-project('kedilinux-tmpfiles', 'c',
+project('tmpfiles', 'c',
         version : '0.99.2',
         license : 'LGPLv2+',
         default_options: [

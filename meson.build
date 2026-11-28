@@ -1,5 +1,5 @@
 project('tmpfiles', 'c',
-        version : '0.99.2',
+        version : '0.99.3',
         license : 'LGPLv2+',
         default_options: [
                 'c_std=gnu11',
